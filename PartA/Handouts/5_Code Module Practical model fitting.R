@@ -1,3 +1,4 @@
+
 # Code from:
 # A tutorial on the use of the model fitting engines 
 # JAGS, NIMBLE, Stan and TMB and on 
@@ -7,9 +8,16 @@
 # UZH, Switzerland,
 # April 2021
 
-# Written by Marc Kéry (Swiss Ornithological Institute) and 
-# Ken F. Kellner (ESF, SUNY Syracuse)
+# Written by:
+# Marc Kéry (Swiss Ornithological Institute, Sempach, Switzerland) &
+# Ken Kellner (College of Environmental Science and Forestry, SUNY Syracuse, NY, USA)
+# 2020-2021
 
+# This file contains material from the book "Introduction to WinBUGS for Ecologists",
+# Academic Press, 2010; see https://www.mbr-pwrc.usgs.gov/software/kerybook/ 
+
+# For an overview of our research programme on hierarchical modeling in ecology,
+# see https://www.mbr-pwrc.usgs.gov/pubanalysis/roylebook/ 
 
 
 
@@ -83,10 +91,10 @@ nc <- 3           # Number of chains
 nt <- 1           # Thinning rate (nt = 1 means we do not thin)
 
 # Call JAGS (ART 1 min) and marvel at JAGS' progress bar
-out4 <- jags(data = dataList, inits = inits, parameters.to.save = params, model.file = "model5.4.txt", n.iter = ni, n.burnin = nb, n.chains = nc, n.thin = nt, n.adapt = na, parallel = FALSE)
+out4 <- jags(data = dataList, inits = inits, parameters.to.save = params, model.file = "model4.txt", n.iter = ni, n.burnin = nb, n.chains = nc, n.thin = nt, n.adapt = na, parallel = FALSE)
 
 # Call JAGS in parallel (ART <1 min) and check convergence
-out4 <- jags(data = dataList, inits = inits, parameters.to.save = params, model.file = "model5.4.txt", n.iter = ni, n.burnin = nb, n.chains = nc, n.thin = nt, n.adapt = na, parallel = TRUE)
+out4 <- jags(data = dataList, inits = inits, parameters.to.save = params, model.file = "model4.txt", n.iter = ni, n.burnin = nb, n.chains = nc, n.thin = nt, n.adapt = na, parallel = TRUE)
 par(mfrow=c(2, 2)); jagsUI::traceplot(out4)        # Produce Fig. 3
 
 # Produce a summary of the fitted model object 
@@ -306,7 +314,7 @@ system.time(
 
 # Check convergence and print posterior summaries
 par(mfrow = c(2, 2))                # not sure why this is ignored !
-traceplot(out6, c("mu", "sigma"))   # Wilted-flower color plots ...
+rstan::traceplot(out6, c("mu", "sigma"))   # Wilted-flower color plots ...
 print(out6, c("mu", "sigma"))
 print(out6, dig = 1)
 
@@ -451,6 +459,7 @@ sol <- optim(starts, fn=out8$fn, gr=out8$gr, method="BFGS", hessian = TRUE)
 
 
 
+
 #### 9 Comparison of the all the parameter estimates for the model of the mean
 # Compare results with truth and previous estimates
 tmb_est <- c(sol$par[1], exp(sol$par[2])) # backtransform SD estimate!
@@ -461,3 +470,4 @@ print(tmp, 4)
 ### We would argue that you can consider 
 #   these estimates as numerically identical 
 #   for virtually all practical purposes
+
