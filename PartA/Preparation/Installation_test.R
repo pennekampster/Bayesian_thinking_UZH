@@ -30,7 +30,7 @@ getMLE <- function(sol, dig = 3){
 
 nimble_summary <- function(samples, params=NULL, digits=3){
   if(!is.null(params)){
-    samples <- jagsUI:::order.params(samples, params, FALSE, FALSE)
+    samples <- jagsUI::order.params(samples, params, FALSE, FALSE)
   }
   mat <- as.matrix(samples)
   nchain <- length(samples)
@@ -102,7 +102,7 @@ ni <- 12000       # Number of draws from the posterior (in each chain)
 nb <- 2000        # Number of draws to discard as burn-in
 nc <- 3           # Number of chains
 nt <- 1           # Thinning rate (nt = 1 means we do not thin)
-out4 <- jags(data = dataList, inits = inits, parameters.to.save = params, model.file = "model5.4.txt", n.iter = ni, n.burnin = nb, n.chains = nc, n.thin = nt, n.adapt = na, parallel = TRUE)
+out4 <- jags(data = dataList, inits = inits, parameters.to.save = params, model.file = "model4.txt", n.iter = ni, n.burnin = nb, n.chains = nc, n.thin = nt, n.adapt = na, parallel = TRUE)
 jags_est <- out4$summary[1:2,1]
 print(jags_est)
 
@@ -176,6 +176,8 @@ diy_est <- out7$par
 
 ### 8 Get the MLEs with TMB
 library(TMB)
+
+setwd = 
 dataList <- list(y = y1000, n = length(y1000))
 cat(file="model8.cpp",
 "#include <TMB.hpp>
