@@ -9,7 +9,7 @@
 # April 2021
 
 # Written by:
-# Marc Kéry (Swiss Ornithological Institute, Sempach, Switzerland) &
+# Marc K?ry (Swiss Ornithological Institute, Sempach, Switzerland) &
 # Ken Kellner (College of Environmental Science and Forestry, SUNY Syracuse, NY, USA)
 # 2020-2021
 
@@ -28,6 +28,9 @@ set.seed(39)
 # Generate two samples of body mass measurements of male peregrines
 y10 <- rnorm(n = 10, mean = 600, sd = 30)       # Sample of 10 birds
 y1000 <- rnorm(n = 1000, mean = 600, sd = 30)   # Sample of 1000 birds
+
+# how do the programs handle NAs?
+y1000[1] <- NA
 
 # Save the data-generating values of the parameters for later comparisons
 truth <- c(mean=600, sd=30)
