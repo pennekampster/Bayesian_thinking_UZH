@@ -1,0 +1,19 @@
+depth;profondeur (cm)
+current;courant (m/s)
+conductivity;conductivité (microS/cm)
+temperature;température (°C)
+shade;ombrage (recouvr)
+subs_lime;argile-limon
+subs_sand;sable
+subs_grav;graviers
+subs_rocks;galets et plus gros
+org_rip;litière (feuilles de la ripisylve)
+org_helo;litière (feuilles d'hélophytes)
+org_wood;bois mort
+veg_sub;vég. submergée
+veg_float;vég. flottante
+veg_emer;vég. émergente
+veg_sub_4;4/4 surface
+veg_sub_3;3/4 haut
+veg_sub_2;2/4 bas
+veg_sub_1;1/4 fond
