@@ -14,6 +14,6 @@ The present project is based on data from the monitoring of the Rhône restorati
 
 Data from 19 cut-off channels can be analyzed, covering fourteen years (biennal sampling for most sites). Some channels are permanently connected and flowing, other channels have just a downstream connection, the last category is not connected at all and is influenced by the river during floods only. 
 
-## Some ideas for the ananlysis
+## Some ideas for the analysis
 
 In a multi-level approach, we can explore different relations between environmental variables and species distribution. Temporal and spatial aspects can be incorporated, as well as the effect of the river restoration.  
