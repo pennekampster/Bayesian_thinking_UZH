@@ -4,7 +4,7 @@
 
 ![](Lones2.jpg)
 
-The Upper Rh\^one River between Geneva and Lyon comprises a number of sectors with relics of the natural floodplain of a braided or meandering river. Like most European floodplains, the natural course of the Rh\^one has been heavily altered \citep{Bravard2008}. The remaining channels, isolated by dikes or by natural changes in river morphology offer diverse habitats for freshwater gastropods. These make up an important part of river diversity. The so-called pulse floodplains are in fact the most species rich landscapes for freshwater gastropods \citep{Stanford2005}. 
+The Upper Rhône River between Geneva and Lyon comprises a number of sectors with relics of the natural floodplain of a braided or meandering river. Like most European floodplains, the natural course of the Rhône has been heavily altered. The remaining channels, isolated by dikes or by natural changes in river morphology offer diverse habitats for freshwater gastropods. These make up an important part of river diversity. The so-called pulse floodplains are in fact the most species rich landscapes for freshwater gastropods. 
 
 The present project is based on data from the monitoring of the Rhône restoration program (e.g., https://onlinelibrary.wiley.com/toc/13652427/2015/60/6, https://doi.org/10.1016/S0925-8574(02)00019-8). Two sectors of the Upper Rhône have been sampled repeatedly before and after restoration. Both sectors are characterized by a power plant installation for which the main flow of the Rhône is diverted. The bypassed sections include some channels of different connectivity with the main river. 
 
