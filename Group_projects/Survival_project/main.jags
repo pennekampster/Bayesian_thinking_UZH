@@ -1,7 +1,0 @@
-model {
-  shape ~ dunif(0, max_shape)
-  lambda ~ dunif(0, max_lambda)
-  for ( i in 1:n ) {
-    day2[i] ~ dweib(shape, lambda)
-  }
-}
