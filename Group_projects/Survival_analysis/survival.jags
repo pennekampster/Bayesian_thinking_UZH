@@ -1,0 +1,9 @@
+model {
+  sdlog_lambda <- sqrt(log(1+sd_lambda^2/mu_lambda^2))
+  mulog_lambda <- log(mu_lambda)-0.5*sdlog_lambda^2
+  lambda ~ dlnorm(mulog_lambda,1/sdlog_lambda^2)
+  for ( i in 1:n ) {
+    p[i] <- exp(-lambda*t[i])-exp(-lambda*t[i+1])
+  }
+  y ~ dmulti(p,N)
+}
