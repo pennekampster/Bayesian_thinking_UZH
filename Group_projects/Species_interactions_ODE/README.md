@@ -21,6 +21,7 @@ The first two datasets are from classic functional response experiments, whereas
 
 ### Predator-prey models implemented in Stan
 https://mc-stan.org/users/documentation/case-studies/lotka-volterra-predator-prey.html
+
 https://www.magesblog.com/post/2021-02-08-fitting-multivariate-ode-models-with-brms/
 
 ## Relevant literature
