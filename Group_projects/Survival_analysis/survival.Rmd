@@ -196,7 +196,13 @@ buckets, with $n_1$ ending up in the first bucket, $n_2$ in the second etc. Thus
 \begin{equation}
 L_{\mathrm{survival}}(\lambda,{\bf y})=\frac{N!}{y_1!\cdots y_{n+1}!}p_1^{y_1}(\lambda) \cdot p_2^{y_2}(\lambda) \cdot \cdots p_{n}^{y_n}(\lambda)
 \end{equation}
-We will use this likelihood function to compute the extinction rate $\lambda$ for the selected species.
+We will use this likelihood function to compute the extinction rate $\lambda$ for the selected species in a Bayesian framework, using univariate lognormal priors on the extinction rate.
+
+Note that in JAGS, the lognormal distribution is parameterized using the mean $m$ and and precision $\tau = 1/s^2$ of its normally distributed logarithm. Therefore, to get a lognormally distributed extinction rate $\lambda \sim LN(\mu_{\lambda},\sigma_{\lambda})$, with mean $\mu_{\lambda}$ and standard deviation $\sigma_{\lambda}$, we will use the conversion formulas given by
+\begin{equation}
+    m = log(\mu_{\lambda})-\frac{\sigma^2_{\lambda}}{2}, \; \;  s=\sqrt{\frac{log(1+\sigma^2_{\lambda})}{\mu^2_{\lambda}}},
+\end{equation}
+for the mean and standard deviation respectively.
 
 
 ```{r message=FALSE, warning=FALSE}
@@ -215,6 +221,8 @@ sampsize <- 10000
 data.survival.frame           <- data.frame(matrix(ncol=3,nrow=8,0))
 colnames(data.survival.frame) <- c("var","t","data")
 
+
+
 #### count the extinction events during the different weeks
 ww <- 1
 for(ww in 1:8){
@@ -222,10 +230,6 @@ for(ww in 1:8){
   data.survival.frame[ww,"t"]   <-ww
   data.survival.frame[ww,"data"]<-length(which(spp.dd$day2==ww))
 }
-
-
-
-
 
 ## compile the data
 
@@ -240,10 +244,9 @@ y <- c(data.survival.frame$data,N-sum(data.survival.frame$data))
 t <- c(0,data.survival.frame$t,1000)
 
 ## write JAGS model definition file:
-
 cat("model {\n",
-    "  sdlog_lambda <- sqrt(log(1+sd_lambda^2/mu_lambda^2))\n",
     "  mulog_lambda <- log(mu_lambda)-0.5*sdlog_lambda^2\n",
+    "  sdlog_lambda <- sqrt(log(1+sd_lambda^2/mu_lambda^2))\n",
     "  lambda ~ dlnorm(mulog_lambda,1/sdlog_lambda^2)\n",
     "  for ( i in 1:n ) {\n",
     "    p[i] <- exp(-lambda*t[i])-exp(-lambda*t[i+1])\n",
@@ -253,12 +256,12 @@ cat("model {\n",
     sep="",
     file=file.jags.model)
 
+### Note how we transformed the mean and sd of the prior.
 
 ## run JAGS:
-
 jags.obj <- jags.model(file.jags.model,
-                       data=list(mu_lambda = 0.2,
-                                 sd_lambda = 0.2,
+                       data=list(mu_lambda = 0.2, ### mean of the prior
+                                 sd_lambda = 0.2, ### standard deviation of the prior
                                  n         = nrow(data.survival.frame)+1,
                                  N         = sum(y),
                                  t         = t,
@@ -269,14 +272,13 @@ jags.obj <- jags.model(file.jags.model,
 jags.res <- coda.samples(jags.obj,c("lambda"),sampsize)
 plot(jags.res)
 
-
-## Plot Distribution of the inferred extinction time
-hist(1/as.matrix(jags.res),main="MTE",ylab="time (weeks)")
+## compute and plot the distribution of the inferred Mean time to extinction
+MTE <- 1/as.matrix(jags.res)
+hist(MTE,main="MTE",xlab="time (weeks)")
 
 ## COMPARE THIS RESULT WITH THE PLOTS OBTAINED BEFORE
-## WHAT CAN YOU TELL ABOUT THE OBSERVED EXTINCTION TIME
-
-
+## WHAT CAN YOU TELL ABOUT THE OBSERVED EXTINCTION TIME?
+## TRY TO CHANGE THE PRIORS PARAMETERS, AND SEE HOW THIS AFFECTS THE MTE.
 ```
 
 <!-- For cross referencing -->
