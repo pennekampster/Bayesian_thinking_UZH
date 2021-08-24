@@ -21,8 +21,13 @@ There are 5 .csv tables, three main tables and two explanatory tables:
 
   - Contains info about the samples
   - Rows -> samples
-  - Columns -> Info (year, season, site, channel)
-  
+  - Columns -> Info 
+    - Channel: channel
+    - Site: AM: Upstream or AV: Downstream
+    - Q: Sample square number within the sit
+    - Year: Year
+    - Season: E: Summer or P: Spring
+ 
 - gastero_fauna_key.csv
   - Info about Species incl. Family
   
