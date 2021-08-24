@@ -1,0 +1,41 @@
+Reach,Channel,Site,Year,Type,con_before,con_after,flow_before,flow_after,substrat_before,substrat_after
+Belley,BEAR,UP,2005,Dredged,no,no,no,No,silt,silt
+Belley,BEAR,DO,2005,Flow incr.,do,do,inter,inter,silt to pebble,silt to pebble
+Belley,CHAN,UP,NA,Non-restored,up-do,up-do,yes,Yes,gravel-pebble,gravel-pebble
+Belley,CHAN,DO,NA,Non-restored,up-do,up-do,yes,Yes,sand to pebble,sand to pebble
+Belley,ENIL,UP,2005,Reconnected,no,up-do,no,Yes,pebble,pebble
+Belley,ENIL,DO,2005,Reconnected,inter,up-do,inter,Yes,silt to pebble,pebble
+Belley,FOUR,UP,2005,Dredged,no,do,no,No,gravel-pebble,gravel-pebble
+Belley,FOUR,DO,2005,Flow incr.,do,do,inter,inter,silt to pebble,silt to pebble
+Belley,LUCE,UP,2005,Flow incr.,up-do,up-do,yes,Yes,gravel-pebble,gravel-pebble
+Belley,LUCE,DO,2005,Flow incr.,up-do,up-do,yes,Yes,sand to pebble,sand to pebble
+Belley,LUIS,UP,2005,Dredged,no,do,no,No,silt to pebble,silt to pebble
+Belley,LUIS,DO,2005,Flow incr.,do,do,inter,inter,gravel-pebble,gravel-pebble
+Belley,MOIR,UP,2005,Flow incr.,no,no,no,No,silt-sand,silt to pebble
+Belley,MOIR,DO,2005,Dredged,do,do,no,No,silt-sand,silt-sand
+Brégnier,CRBL,UP,NA,Non-restored,no,no,no,No,silt,silt
+Brégnier,CRBL,DO,NA,Non-restored,no,NA,no,NA,silt,NA
+Brégnier,DAHO,DO,NA,Non-restored,do,NA,inter,NA,silt,NA
+Brégnier,GRAN,UP,2006,Dredged,no,no,no,No,silt to pebble,sand to pebble
+Brégnier,GRAN,DO,2006,Dredged,no,do,no,inter,silt to pebble,sand to pebble
+Brégnier,MATH,UP,2006,Reconnected,no,up-do,no,Yes,silt,gravel-pebble
+Brégnier,MATH,DO,2006,Reconnected,no,up-do,no,Yes,silt,gravel-pebble
+Brégnier,MOLO,UP,NA,Non-restored,no,no,no,No,silt,silt
+Brégnier,MOLO,DO,,Reconnected,no,do,no,inter,silt,sand to pebble
+Brégnier,MORT,CE,NA,Non-restored,no,no,no,No,silt,silt
+Brégnier,MORT,DO,NA,Non-restored,do,do,inter,inter,silt-sand,silt-sand
+Brégnier,NAPP,UP,NA,Non-restored,no,NA,no,NA,silt,NA
+Brégnier,PLAI,UP,NA,Non-restored,no,no,no,No,silt,silt
+Brégnier,PLAI,DO,NA,Non-restored,no,no,no,No,silt,silt
+Brégnier,PONT,UP,NA,Non-restored,no,no,no,No,silt,silt
+Brégnier,PONT,DO,2006,Reconnected,no,do,no,inter,silt,silt-sand
+Brégnier,ROSS,UP,NA,Non-restored,no,no,no,No,silt,silt
+Brégnier,ROSS,CE,NA,Non-restored,no,NA,inter,NA,silt,NA
+Brégnier,ROSS,DO,NA,Non-restored,no,no,inter,inter,silt-sand,silt-sand
+Brégnier,TEBA,DO,NA,Non-restored,no,NA,no,NA,silt,NA
+Brégnier,TONK,UP,NA,Non-restored,up-do,up-do,yes,Yes,pebble,pebble
+Brégnier,TONK,DO,NA,Non-restored,up-do,up-do,yes,Yes,gravel-pebble,gravel-pebble
+Brégnier,VACH,UP,2006,Reconnected,no,up-do,no,Yes,sand to pebble,gravel-pebble
+Brégnier,VACH,DO,2006,Reconnected,do,up-do,interm,Yes,gravel-pebble,gravel-pebble
+Brégnier,VILO,UP,NA,Non-restored,no,NA,no,NA,silt,NA
+Brégnier,VILO,DO,NA,Non-restored,no,no,no,No,silt,silt
