@@ -1,41 +1,41 @@
-Reach,Channel,Site,Year,Type,con_before,con_after,flow_before,flow_after,substrat_before,substrat_after
-Belley,BEAR,UP,2005,Dredged,no,no,no,No,silt,silt
-Belley,BEAR,DO,2005,Flow incr.,do,do,inter,inter,silt to pebble,silt to pebble
-Belley,CHAN,UP,NA,Non-restored,up-do,up-do,yes,Yes,gravel-pebble,gravel-pebble
-Belley,CHAN,DO,NA,Non-restored,up-do,up-do,yes,Yes,sand to pebble,sand to pebble
-Belley,ENIL,UP,2005,Reconnected,no,up-do,no,Yes,pebble,pebble
-Belley,ENIL,DO,2005,Reconnected,inter,up-do,inter,Yes,silt to pebble,pebble
-Belley,FOUR,UP,2005,Dredged,no,do,no,No,gravel-pebble,gravel-pebble
-Belley,FOUR,DO,2005,Flow incr.,do,do,inter,inter,silt to pebble,silt to pebble
-Belley,LUCE,UP,2005,Flow incr.,up-do,up-do,yes,Yes,gravel-pebble,gravel-pebble
-Belley,LUCE,DO,2005,Flow incr.,up-do,up-do,yes,Yes,sand to pebble,sand to pebble
-Belley,LUIS,UP,2005,Dredged,no,do,no,No,silt to pebble,silt to pebble
-Belley,LUIS,DO,2005,Flow incr.,do,do,inter,inter,gravel-pebble,gravel-pebble
-Belley,MOIR,UP,2005,Flow incr.,no,no,no,No,silt-sand,silt to pebble
-Belley,MOIR,DO,2005,Dredged,do,do,no,No,silt-sand,silt-sand
-BrÃ©gnier,CRBL,UP,NA,Non-restored,no,no,no,No,silt,silt
-BrÃ©gnier,CRBL,DO,NA,Non-restored,no,NA,no,NA,silt,NA
-BrÃ©gnier,DAHO,DO,NA,Non-restored,do,NA,inter,NA,silt,NA
-BrÃ©gnier,GRAN,UP,2006,Dredged,no,no,no,No,silt to pebble,sand to pebble
-BrÃ©gnier,GRAN,DO,2006,Dredged,no,do,no,inter,silt to pebble,sand to pebble
-BrÃ©gnier,MATH,UP,2006,Reconnected,no,up-do,no,Yes,silt,gravel-pebble
-BrÃ©gnier,MATH,DO,2006,Reconnected,no,up-do,no,Yes,silt,gravel-pebble
-BrÃ©gnier,MOLO,UP,NA,Non-restored,no,no,no,No,silt,silt
-BrÃ©gnier,MOLO,DO,,Reconnected,no,do,no,inter,silt,sand to pebble
-BrÃ©gnier,MORT,CE,NA,Non-restored,no,no,no,No,silt,silt
-BrÃ©gnier,MORT,DO,NA,Non-restored,do,do,inter,inter,silt-sand,silt-sand
-BrÃ©gnier,NAPP,UP,NA,Non-restored,no,NA,no,NA,silt,NA
-BrÃ©gnier,PLAI,UP,NA,Non-restored,no,no,no,No,silt,silt
-BrÃ©gnier,PLAI,DO,NA,Non-restored,no,no,no,No,silt,silt
-BrÃ©gnier,PONT,UP,NA,Non-restored,no,no,no,No,silt,silt
-BrÃ©gnier,PONT,DO,2006,Reconnected,no,do,no,inter,silt,silt-sand
-BrÃ©gnier,ROSS,UP,NA,Non-restored,no,no,no,No,silt,silt
-BrÃ©gnier,ROSS,CE,NA,Non-restored,no,NA,inter,NA,silt,NA
-BrÃ©gnier,ROSS,DO,NA,Non-restored,no,no,inter,inter,silt-sand,silt-sand
-BrÃ©gnier,TEBA,DO,NA,Non-restored,no,NA,no,NA,silt,NA
-BrÃ©gnier,TONK,UP,NA,Non-restored,up-do,up-do,yes,Yes,pebble,pebble
-BrÃ©gnier,TONK,DO,NA,Non-restored,up-do,up-do,yes,Yes,gravel-pebble,gravel-pebble
-BrÃ©gnier,VACH,UP,2006,Reconnected,no,up-do,no,Yes,sand to pebble,gravel-pebble
-BrÃ©gnier,VACH,DO,2006,Reconnected,do,up-do,interm,Yes,gravel-pebble,gravel-pebble
-BrÃ©gnier,VILO,UP,NA,Non-restored,no,NA,no,NA,silt,NA
-BrÃ©gnier,VILO,DO,NA,Non-restored,no,no,no,No,silt,silt
+Reach;Channel;Site;Latitude;Longitude;rest_year;Type;con_before;con_after;flow_before;flow_after;substrat_before;substrat_after
+Belley;BEAR;UP;45°46'50.2 N;5°46'29.3 E;2005;Dredged;no;no;no;No;silt;silt
+Belley;BEAR;DO;45°46'34.3 N;5°46'43.4 E;2005;Flow incr.;do;do;inter;inter;silt to pebble;silt to pebble
+Belley;CHAN;UP;45°42'5.1 N;5°41'59.1 E;NA;Non-restored;up-do;up-do;yes;Yes;gravel-pebble;gravel-pebble
+Belley;CHAN;DO;45°41'42.8 N;5°42'13.7 E;NA;Non-restored;up-do;up-do;yes;Yes;sand to pebble;sand to pebble
+Belley;ENIL;UP;45°43'7.3 N;5°45'53.4 E;2005;Reconnected;no;up-do;no;Yes;pebble;pebble
+Belley;ENIL;DO;45°43'4.7 N;5°45'48.9 E;2005;Reconnected;inter;up-do;inter;Yes;silt to pebble;pebble
+Belley;FOUR;UP;45°46'47.8 N;5°46'59.4 E;2005;Dredged;no;do;no;No;gravel-pebble;gravel-pebble
+Belley;FOUR;DO;45°46'32 N;5°46'59.3 E;2005;Flow incr.;do;do;inter;inter;silt to pebble;silt to pebble
+Belley;LUCE;UP;45°45'54.3 N;5°46'57.7 E;2005;Flow incr.;up-do;up-do;yes;Yes;gravel-pebble;gravel-pebble
+Belley;LUCE;DO;45°45'30.4 N;5°47'2.8 E;2005;Flow incr.;up-do;up-do;yes;Yes;sand to pebble;sand to pebble
+Belley;LUIS;UP;45°48'3.7 N;5°47'0.1 E;2005;Dredged;no;do;no;No;silt to pebble;silt to pebble
+Belley;LUIS;DO;45°47'36.3 N;5°46'40.1 E;2005;Flow incr.;do;do;inter;inter;gravel-pebble;gravel-pebble
+Belley;MOIR;UP;45°47'24.6 N;5°46'54.3 E;2005;Flow incr.;no;no;no;No;silt-sand;silt to pebble
+Belley;MOIR;DO;45°47'9.5 N;5°46'36.2 E;2005;Dredged;do;do;no;No;silt-sand;silt-sand
+Brégnier;CRBL;UP;45°38'30.4 N;5°36'3.9 E;NA;Non-restored;no;no;no;No;silt;silt
+Brégnier;CRBL;DO;45°37'54.8 N;5°36'18.9 E;NA;Non-restored;no;NA;no;NA;silt;silt
+Brégnier;DAHO;DO;45°38'59.2 N;5°35'32.2 E;NA;Non-restored;do;NA;inter;NA;silt;silt
+Brégnier;GRAN;UP;45°37'47.5 N;5°38'44.5 E;2006;Dredged;no;no;no;No;silt to pebble;sand to pebble
+Brégnier;GRAN;DO;45°37'40.8 N;5°38'36.2 E;2006;Dredged;no;do;no;inter;silt to pebble;sand to pebble
+Brégnier;MATH;UP;45°38'44.2 N;5°35'26.9 E;2006;Reconnected;no;up-do;no;Yes;silt;gravel-pebble
+Brégnier;MATH;DO;45°39'9.1 N;5°35'19.4 E;2006;Reconnected;no;up-do;no;Yes;silt;gravel-pebble
+Brégnier;MOLO;UP;45°39'8 N;5°35'57.8 E;NA;Non-restored;no;no;no;No;silt;silt
+Brégnier;MOLO;DO;45°39'21.2 N;5°35'21.9 E;;Reconnected;no;do;no;inter;silt;sand to pebble
+Brégnier;MORT;CE;45°39'56.8 N;5°35'34.5 E;NA;Non-restored;no;no;no;No;silt;silt
+Brégnier;MORT;DO;45°40'11.3 N;5°35'20.4 E;NA;Non-restored;do;do;inter;inter;silt-sand;silt-sand
+Brégnier;NAPP;UP;45°39'17 N;5°34'26.1 E;NA;Non-restored;no;NA;no;NA;silt;silt
+Brégnier;PLAI;UP;45°41'7.7 N;5°33'18.4 E;NA;Non-restored;no;no;no;No;silt;silt
+Brégnier;PLAI;DO;45°41'11.1 N;5°33'15.4 E;NA;Non-restored;no;no;no;No;silt;silt
+Brégnier;PONT;UP;45°41'7.8 N;5°33'28.1 E;NA;Non-restored;no;no;no;No;silt;silt
+Brégnier;PONT;DO;45°41'16.7 N;5°33'17.8 E;2006;Reconnected;no;do;no;inter;silt;silt-sand
+Brégnier;ROSS;UP;45°38'9.8 N;5°36'48 E;NA;Non-restored;no;no;no;No;silt;silt
+Brégnier;ROSS;CE;45°38'9.1 N;5°36'56.2 E;NA;Non-restored;no;NA;inter;NA;silt;silt
+Brégnier;ROSS;DO;45°38'13.6 N;5°36'57.7 E;NA;Non-restored;no;no;inter;inter;silt-sand;silt-sand
+Brégnier;TEBA;DO;45°39'38.6 N;5°34'26.2 E;NA;Non-restored;no;NA;no;NA;silt;silt
+Brégnier;TONK;UP;45°39'9.1 N;5°35'19.4 E;NA;Non-restored;up-do;up-do;yes;Yes;pebble;pebble
+Brégnier;TONK;DO;45°39'4.7 N;5°35'33.8 E;NA;Non-restored;up-do;up-do;yes;Yes;gravel-pebble;gravel-pebble
+Brégnier;VACH;UP;45°37'21.5 N;5°38'34.7 E;2006;Reconnected;no;up-do;no;Yes;sand to pebble;gravel-pebble
+Brégnier;VACH;DO;45°37'8.5 N;5°38'16.2 E;2006;Reconnected;do;up-do;interm;Yes;gravel-pebble;gravel-pebble
+Brégnier;VILO;UP;45°38'1.4 N;5°37'0.5 E;NA;Non-restored;no;NA;no;NA;silt;silt
+Brégnier;VILO;DO;45°38'0.2 N;5°36'57.4 E;NA;Non-restored;no;no;no;No;silt;silt
