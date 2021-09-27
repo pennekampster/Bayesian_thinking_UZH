@@ -1,0 +1,14 @@
+occupancy.cpp notes:
+
+* added src folder - good practice for organizing C++ code
+* .cpp successfuly compiles
+* After compilation, the computer will return a .dll and .o file of the same name. 
+  These files are specific to your computer's operating system, so it is recommended 
+  not to push them to gitHub. You will need to run a compilation step yourself in R
+  using TMB::compile('occupancy.cpp')
+* The J vector tallies the number of reps per site, which then defines the size of the
+  inner loop on line 25. This is similar to what Gesa's JAGS code was doing with nsites.
+* k is an accumulated index and replaces the need for the siteID index 
+* Question: is the knownOcc vector redundant or is this a special identifier for higher certainty obs?
+  
+  
