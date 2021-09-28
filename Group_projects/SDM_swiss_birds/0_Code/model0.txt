@@ -1,0 +1,16 @@
+model{
+    
+    # Priors
+    psi ~ dunif(0,1)
+    p ~ dunif(0,1)
+    
+    # Likelihood
+    for(i in 1:nsites){
+      z[i] ~ dbern(psi)
+    
+      for(k in 1:nvisits[i]){
+        y[i,k] ~ dbern(z[i]*p)
+    }
+   }
+ }
+
