@@ -1,0 +1,21 @@
+MODEL SELECTION PROCEDURE
+using AIC
+
+- [empty]
+- random site effect
+
+- forest
+- forest + ent
+- forest + ent1
+- forest + ent2
+--> choose best1
+
+- best1 + farmland
+--> choose best2
+
+- best2 + elevation
+
+--> choose best
+
+- best3 + time [effect on detection]
+

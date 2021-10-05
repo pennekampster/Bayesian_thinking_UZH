@@ -16,17 +16,26 @@ template<class Type>
     //PARAMETER_VECTOR(logit_p); //length = n.sites x n.reps  WHY does this have a length of nsites*nvisits
     //PARAMETER(logit_psi(i)); // length=1
 	//PARAMETER(logit_p); // length=1
-	PARAMETER_VECTOR(beta); //parameter vector of length #covariates + 1
-	PARAMETER_VECTOR(alpha);
+	PARAMETER_VECTOR(beta); //parameters for covariates of occupancy; length=#covariates + 1
+	PARAMETER_VECTOR(alpha); //parameters for covariates of detection; length=#covariates + 1
+	PARAMETER(log_sig_u); //logged sd of random effects u, help variable
+	PARAMETER_VECTOR(u); //length=nsites, random site effect on occupancy
 	vector<Type> Xbeta = X*beta;
 	vector<Type> Zalpha = Z*alpha;
 	
-    vector<Type> psi = invlogit(Xbeta);
-	vector<Type> p = invlogit(Zalpha);
+ 	Type sig_u = exp(log_sig_u);
     //Type p = invlogit(logit_p);
     
     Type nll = 0;
-    //int N = knownOcc.size(); //N=number of sites
+	nll -= dnorm(u, Type(0), sig_u, TRUE).sum();
+	//for(int i=0; i<y.size(); i++){
+	//	Zalpha += u(site_y(i)); // for random site effects on detection
+	//}
+	Xbeta += u;
+	
+	vector<Type> psi = invlogit(Xbeta);
+	vector<Type> p = invlogit(Zalpha);
+
 	int N = nd.size();
     
     int k = 0; // k counts through all lines in y
@@ -37,11 +46,7 @@ template<class Type>
 		 //     when y(k)=1       when y(k)=0
         k++;
       }
-      //if(knownOcc(i)==1){
-      //  psi(i) = 1.0;
-      //}
       if(nd(i)==0){
-		//psi(i) = 1.0;
         nll -= log(cp*psi(i));
       }
       if(nd(i)==1){
@@ -49,9 +54,15 @@ template<class Type>
       }
     }
 	
+	//SIMULATE( // requires a variable it already knows
+	//y=rnorm(mu, sig);
+	//REPORT(y);
+	//)
+	
 	Type mean_psi = psi.sum()/N;
     Type mean_p = p.sum()/y.size();
 	REPORT(mean_p);
 	REPORT(mean_psi);
+	REPORT(sig_u);
     return nll;
   }
