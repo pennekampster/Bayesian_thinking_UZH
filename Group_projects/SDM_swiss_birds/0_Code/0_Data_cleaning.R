@@ -8,10 +8,10 @@
 # This code needs to be adjusted
 
 # set working directory
-setwd("H:/GitHub/Git_repositories_to_pull_from/Bayesian_thinking_UZH/Group_projects/SDM_swiss_birds/0_Code")
+setwd("C:/Users/Gesa/Documents/GitHub/GitHub_cloned_repositories_to_pull_from/Bayesian_thinking_UZH/Group_projects/SDM_swiss_birds/0_Code")
 
 # define path to data folder
-folder <- "H:/GitHub/Git_repositories_to_pull_from/Bayesian_thinking_UZH/Group_projects/SDM_swiss_birds/1_Data/"
+folder <- "C:/Users/Gesa/Documents/GitHub/GitHub_cloned_repositories_to_pull_from/Bayesian_thinking_UZH/Group_projects/SDM_swiss_birds/1_Data/"
 
 
 
